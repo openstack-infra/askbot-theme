@@ -1,0 +1,71 @@
+{% import "macros.html" as macros%}
+{%- if request.user.is_authenticated() -%}
+    <span class="dropdown-toggle">
+        <ul class="dropdown-menu">
+            <li>
+                {{ macros.inbox_link(request.user) }}
+                <a>{% trans %}responses{% endtrans %}</a>
+            </li>
+            <li>
+                {{ macros.moderation_items_link(request.user, moderation_items) }}
+                <a>{% trans %}moderation{% endtrans %}</a>
+            </li>
+            {%-
+                if settings.KARMA_MODE != 'hidden' and settings.BADGES_MODE != 'hidden' 
+            -%}
+                <li>
+                    {{ macros.user_long_score_and_badge_summary(
+                                                    user,
+                                                    badges_mode = settings.BADGES_MODE
+                        )
+                    }}
+                </li>
+            {%- endif -%}
+            {% if request.user.is_administrator() %}
+                <li>
+                    <a class="settings" href="{% url site_settings %}">{% trans %}settings{% endtrans %}</a>
+                </li>
+                <li>
+                    <a class="widgets" href="{% url widgets %}">{% trans %}widgets{% endtrans %}</a>
+                </li>
+            {% endif %}
+            {% if settings.USE_ASKBOT_LOGIN_SYSTEM %}
+                <li>
+                    <a href="{{ settings.LOGOUT_URL }}?next={{ settings.LOGOUT_REDIRECT_URL }}"
+                    >{% trans %}sign out{% endtrans %}</a>
+                </li>
+            {% endif %}
+        </ul>
+        <a href="{{ request.user.get_absolute_url() }}">{{ request.user.username|escape }}</a> 
+    </span>
+{% elif settings.USE_ASKBOT_LOGIN_SYSTEM %}
+    <a href="{{ settings.LOGIN_URL }}?next={{request.path|clean_login_url|escape}}">{% trans %}Hi there! Please sign in{% endtrans %}</a>
+{% endif %}
+<a 
+  id="navTags"
+  href="{% url tags %}"
+  {% if active_tab == 'tags' %}class="on"{% endif %}
+>{% trans %}tags{% endtrans %}</a>
+{% if settings.GROUPS_ENABLED %}
+<span class="dropdown">
+<a
+  id="navGroups" class='{% if active_tab == 'groups' %}"on"{% endif %}'
+  href="{% url groups %}" data-target="#" >
+  {% trans %}people & groups{% endtrans %}
+</a>
+</span>
+{%else%}
+<a 
+  id="navUsers"
+  href="{% url users %}"
+  {% if active_tab == 'users' %}class="on"{% endif %}
+>{% trans %}users{% endtrans %}</a>
+{% endif %}
+{% if settings.BADGES_MODE == 'public' %}
+<a 
+  id="navBadges"
+  href="{% url badges %}"
+  {% if active_tab == 'badges' %}class="on"{% endif %}
+>{% trans %}badges{% endtrans %}</a>
+{% endif %}
+<a class="help" href="{% url "help" %}" title="{% trans %}help{% endtrans %}">{% trans %}help{% endtrans %}</a>

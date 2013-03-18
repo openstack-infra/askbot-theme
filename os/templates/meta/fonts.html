@@ -1,0 +1,14 @@
+{% if settings.USE_LOCAL_FONTS %}
+    {# this version is for serving fonts locally - e.g. for intranet sites #}
+    <style type="text/css">
+        @font-face {
+            font-family: 'Open Sans Condensed';
+            font-style: normal;
+            font-weight: 700;
+            src: url('{{"/images/OpenSans-CondBold.ttf"|media}}');
+        }
+    </style>
+{% else %}
+    {# note: for IE8 we ask for fonts separately #}
+    <link href='//fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin' rel='stylesheet' type='text/css'>
+{% endif %}

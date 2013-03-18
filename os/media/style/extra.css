@@ -233,10 +233,8 @@ input[type="reset"],
 }
 #footer .span-8,
 #footer .span-4 {
-    box-sizing: border-box;
     margin: 0;
     padding-right: 10px;
-    width: 20%;
 }
 #footer h3 {
     color: #de0000;

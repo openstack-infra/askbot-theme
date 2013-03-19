@@ -1,15 +1,16 @@
-/*$body-font: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-$heading-font: 'PT Sans', serif;*/
-
+/* line 9, ../sass/extra.scss */
 body,
 p,
 .short-summary .counts,
 #footer ul,
 .short-summary .userinfo {
-    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
+
+/* line 23, ../sass/extra.scss */
 #secondaryHeader,
 #questionCount,
+#header,
 #footer h3,
 h1,
 h1.section-title,
@@ -19,228 +20,283 @@ h1.section-title,
 .tag-right,
 .tabBar,
 .question-page .vote-number {
-    font-family: 'PT Sans', serif;
+  font-family: "PT Sans", serif;
 }
+
+/* line 26, ../sass/extra.scss */
 #header {
-    background: #e4eef1;
-    border-top: 3px solid #255e6e;
-    box-shadow: 1px 1px 1px 1px #ccc;
-    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
-    font-family: 'PT Sans', serif;
+  background: #e4eef1;
+  border-top: 3px solid #255e6e;
+  -webkit-box-shadow: 1px 1px 1px 1px #cccccc;
+  -moz-box-shadow: 1px 1px 1px 1px #cccccc;
+  box-shadow: 1px 1px 1px 1px #cccccc;
 }
+
+/* line 31, ../sass/extra.scss */
 #metaNav {
-    position: absolute;
-    left: 200px;
-    bottom: 22px;
+  position: absolute;
+  left: 200px;
+  bottom: 22px;
 }
+/* line 36, ../sass/extra.scss */
+#metaNav a {
+  color: #255e6e;
+  font-size: 16px;
+  line-height: 16px;
+  height: 16px;
+  text-shadow: white 0 1px 1px;
+}
+/* line 44, ../sass/extra.scss */
 #metaNav a.on {
-    font-weight: normal;
-    color: #e4eef1;
-    background: #255e6e !important;
-    border-radius: 5px;
-    text-shadow: 0 0 0;
-    box-shadow: 0 0 2px 2px white;
+  font-weight: normal;
+  color: #e4eef1;
+  background: #255e6e !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0 0 0;
+  -webkit-box-shadow: 0 0 2px 2px white;
+  -moz-box-shadow: 0 0 2px 2px white;
+  box-shadow: 0 0 2px 2px white;
 }
+/* line 57, ../sass/extra.scss */
 #metaNav #navTags,
 #metaNav #navBadges,
 #metaNav #navUsers,
 #metaNav #navGroups,
 #metaNav .help {
-    background: none;
-    padding: 3px 10px 6px 10px;
-    margin: 0 0 0 30px;
+  background: none;
+  padding: 3px 10px 6px 10px;
+  margin: 0 0 0 30px;
 }
-#userToolsNav a,
+/* line 64, ../sass/extra.scss */
+#metaNav .dropdown,
 #metaNav a {
-    color: #255e6e;
-    font-size: 16px;
-    line-height: 16px;
-    height: 16px;
-    text-shadow: #fff 0 1px 1px;
+  display: inline;
+  float: none;
+  padding: 0;
+  margin: 5px 0 0 0;
 }
+/* line 70, ../sass/extra.scss */
+#metaNav span.dropdown-toggle {
+  padding: 10px;
+  border-left: 1px solid #e4eef1;
+  /*background: url(../images/sprites.png) no-repeat -7px -242px;*/
+  position: relative;
+}
+/* line 76, ../sass/extra.scss */
+#metaNav span.dropdown-toggle:hover {
+  background: #e4eef1;
+  /*background: url(../images/sprites.png) no-repeat -7px -274px;*/
+}
+/* line 79, ../sass/extra.scss */
+#metaNav span.dropdown-toggle:hover .dropdown-menu {
+  background: #e4eef1;
+  border-left: 1px solid #e4eef1;
+  display: block;
+  left: -1px;
+  padding: 0 0 10px 0;
+  top: 32px;
+}
+/* line 88, ../sass/extra.scss */
+#metaNav .dropdown-menu {
+  background: #e4eef1;
+  left: 26px;
+  top: 22px;
+}
+/* line 92, ../sass/extra.scss */
+#metaNav .dropdown-menu li {
+  line-height: 1.7;
+  padding-left: 13px;
+}
+/* line 96, ../sass/extra.scss */
+#metaNav .dropdown-menu li:hover {
+  display: block !important;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+/* line 102, ../sass/extra.scss */
+#metaNav .dropdown-menu a {
+  margin: 0;
+  padding: 0;
+}
+/* line 106, ../sass/extra.scss */
+#metaNav .dropdown-menu a:hover {
+  text-decoration: underline;
+}
+
+/* line 111, ../sass/extra.scss */
 #header.with-logo #userToolsNav {
-    bottom: 19px;
-    right: -100px;
+  bottom: 19px;
+  right: -100px;
 }
+
+/* line 115, ../sass/extra.scss */
 #secondaryHeader {
-    background: #fff;
-    border: none;
-    margin-bottom: 7px;
+  background: #fff;
+  border: none;
+  margin-bottom: 7px;
 }
+
+/* line 120, ../sass/extra.scss */
 .scope-selector {
-    font-size: 16px;
-    height: 37px;
-    border-bottom: 3px solid white;
+  font-size: 16px;
+  height: 37px;
+  border-bottom: 3px solid white;
 }
-.scope-selector.on,
+/* line 125, ../sass/extra.scss */
+.scope-selector.on, .scope-selector:hover {
+  background: none;
+  border-bottom: 3px solid;
+  color: #cf2f19;
+  text-decoration: none;
+  -webkit-transition: 0.07s, ease;
+  -moz-transition: 0.07s, ease;
+  -o-transition: 0.07s, ease;
+  transition: 0.07s, ease;
+}
+/* line 132, ../sass/extra.scss */
 .scope-selector:hover {
-    background: none;
-    border-bottom: 3px solid;
-    color: #cf2f19;
-    text-decoration: none;
-    -webkit-transition: 0.07s ease;
+  color: #264D69;
 }
+/* line 135, ../sass/extra.scss */
 .scope-selector:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
-.scope-selector:hover {
-    color: #264D69;
-}
+
+/* line 140, ../sass/extra.scss */
+#askButton,
 #homeButton {
-    background: url(../images/sprites.png) no-repeat 0 -30px;
-    border: none;
-    display: none;
-    width: 33px;
+  display: none;
 }
-#homeButton:hover {
-    background: url(../images/sprites.png) no-repeat -44px -29px;
-}
+
+/* line 143, ../sass/extra.scss */
 .tabBar {
-    background: none;
+  background: none;
 }
+
+/* line 146, ../sass/extra.scss */
 #logo img {
-    height: 56px;
-    margin-left: -10px;
+  height: 56px;
+  margin-left: -10px;
 }
+
+/* line 150, ../sass/extra.scss */
 #searchBar {
-    box-shadow: inset #eee 1px 1px 2px 1px;
-    margin-left: 255px;
-    margin-top: -33px;
+  -webkit-box-shadow: inset #eeeeee 1px 1px 2px 1px;
+  -moz-box-shadow: inset #eeeeee 1px 1px 2px 1px;
+  box-shadow: inset #eeeeee 1px 1px 2px 1px;
+  margin-left: 255px;
+  margin-top: -33px;
 }
+
+/* line 155, ../sass/extra.scss */
 .search-drop-menu {
-    margin-left: 255px;
+  margin-left: 255px;
 }
+
+/* line 158, ../sass/extra.scss */
 .search-drop-menu .footer button {
-    padding: 2px 6px 3px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(5%,#F3F3F3), color-stop(100%,rgb(245, 133, 12)));
-    box-shadow: 0 0 2px 2px white;
-    text-shadow: 0 0 0;
+  padding: 2px 6px 3px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(5%, #f3f3f3), color-stop(100%, #f5850c));
+  background: -webkit-linear-gradient(#ffffff, #f3f3f3 5%, #f5850c);
+  background: -moz-linear-gradient(#ffffff, #f3f3f3 5%, #f5850c);
+  background: -o-linear-gradient(#ffffff, #f3f3f3 5%, #f5850c);
+  background: linear-gradient(#ffffff, #f3f3f3 5%, #f5850c);
+  -webkit-box-shadow: 0 0 2px 2px white;
+  -moz-box-shadow: 0 0 2px 2px white;
+  box-shadow: 0 0 2px 2px white;
+  text-shadow: 0 0 0;
 }
-.search-drop-menu .footer button:hover {
-}
+
+/* line 167, ../sass/extra.scss */
 body.anon #searchBar,
 body.anon .search-drop-menu {
-    margin-left: 158px;
+  margin-left: 158px;
 }
-#askButton {
-    display: none;
-}
+
+/* line 171, ../sass/extra.scss */
 #ContentRight {
-    margin-top: -56px;
-    margin-bottom: 56px;
+  margin-top: -56px;
+  margin-bottom: 56px;
 }
-.box .contributorback,
-.box h2 {
-    background: none;
-    text-align: left;
+
+/* line 178, ../sass/extra.scss */
+.box h2,
+.box .contributorback {
+  background: none;
+  text-align: left;
 }
+/* line 186, ../sass/extra.scss */
+.box .inputs #interestingTagInput,
+.box .inputs #ignoredTagInput,
+.box .inputs #subscribedTagInput,
+.box .inputs #ab-tag-search {
+  width: 132px;
+  height: 23px;
+  line-height: 23px;
+}
+
+/* line 195, ../sass/extra.scss */
 input[type="submit"].searchBtn,
 input.cancelSearchBtn {
-    border: 0;
-    display: none;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    right: -500px;
+  border: 0;
+  display: none;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  right: -500px;
 }
+
+/* line 207, ../sass/extra.scss */
 button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"],
 .button {
-    font-family: 'PT Sans', serif;
-    font-weight: normal;
-    border: 1px solid #e2e2e2 !important;
-    padding: 4px 15px;
-    color: black!important;
-    text-decoration: none!important;
-    font-size: 12.5px;
-    background: #FFFFFF;
-    background: -moz-linear-gradient(top, #FFFFFF 0%, #F3F3F3 50%, #EBEBEB 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(50%,#F3F3F3), color-stop(100%,#EBEBEB));
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#EBEBEB',GradientType=0 );
-    box-shadow: 0px 1px 1px rgba(0,0,0,.5);
-    -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,.2);
-    -moz-box-shadow: 0px 1px 2px rgba(0,0,0,.2);
-    text-shadow: #fff 0px 1px 1px;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-bottom-color: #a0a0a0 !important;
-    border-right-color: #bababa !important;
-    border-left-color: #bababa !important;
+  font-family: "PT Sans", serif;
+  font-weight: normal;
+  border: 1px solid #e2e2e2 !important;
+  padding: 4px 15px;
+  color: black!important;
+  text-decoration: none!important;
+  font-size: 12.5px;
+  background: #FFFFFF;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #f3f3f3), color-stop(100%, #ebebeb));
+  background: -webkit-linear-gradient(#ffffff 0%, #f3f3f3 50%, #ebebeb 100%);
+  background: -moz-linear-gradient(#ffffff 0%, #f3f3f3 50%, #ebebeb 100%);
+  background: -o-linear-gradient(#ffffff 0%, #f3f3f3 50%, #ebebeb 100%);
+  background: linear-gradient(#ffffff 0%, #f3f3f3 50%, #ebebeb 100%);
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: white 0px 1px 1px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border-bottom-color: #a0a0a0 !important;
+  border-right-color: #bababa !important;
+  border-left-color: #bababa !important;
 }
 
-.box .inputs #interestingTagInput,
-.box .inputs #ignoredTagInput,
-.box .inputs #subscribedTagInput,
-.box .inputs #ab-tag-search {
-    width: 132px;
-    height: 23px;
-    line-height: 23px;
-}
-
-#tagSelector div.inputs {
-}
-#tagSelector.box h2 {
-}
-#metaNav .dropdown,
-#metaNav a {
-    display: inline;
-    float: none;
-    padding: 0;
-    margin: 5px 0 0 0;
-}
-#metaNav span.dropdown-toggle {
-    padding: 10px;
-    border-left: 1px solid #e4eef1;
-    /*background: url(../images/sprites.png) no-repeat -7px -242px;*/
-    position: relative;
-}
-#metaNav span.dropdown-toggle:hover {
-    background: #e4eef1;
-    /*background: url(../images/sprites.png) no-repeat -7px -274px;*/
-}
-#metaNav span.dropdown-toggle:hover .dropdown-menu {
-    background: #e4eef1;
-    border-left: 1px solid #e4eef1;
-    display: block;
-    left: -1px;
-    padding: 0 0 10px 0;
-    top: 32px;
-}
-#metaNav .dropdown-menu {
-    background: #e4eef1;
-    left: 26px;
-    top: 22px;
-}
-#metaNav .dropdown-menu li {
-    line-height: 1.7;
-    padding-left: 13px;
-}
-#metaNav .dropdown-menu li:hover {
-    display: block !important;
-    margin: 0;
-    padding: 0;
-    width: 100% !important;
-}
-#metaNav .dropdown-menu a {
-    margin: 0;
-    padding: 0;
-}
-#metaNav .dropdon-menu a:hover {
-    text-decoration: underline;
-}
+/* line 227, ../sass/extra.scss */
 #footer .span-8,
 #footer .span-4 {
-    margin: 0;
-    padding-right: 10px;
+  margin: 0;
+  padding-right: 10px;
 }
+/* line 231, ../sass/extra.scss */
 #footer h3 {
-    color: #de0000;
-    font-size: 16px;
+  color: #de0000;
+  font-size: 16px;
 }
+/* line 235, ../sass/extra.scss */
 #footer ul {
-    list-style: none;
-    margin: 0;
+  list-style: none;
+  margin: 0;
 }

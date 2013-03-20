@@ -28,6 +28,12 @@ h1.section-title,
     border-top: 3px solid #255e6e;
     @include box-shadow(1px 1px 1px 1px #ccc);
 }
+.openid-signin {
+    #metaNav a.signin {
+        background: none;
+        @include box-shadow(0 0 0 0);
+    }
+}
 #metaNav {
     position: absolute;
     left: 200px;
@@ -41,6 +47,13 @@ h1.section-title,
         @include text-shadow(#fff 0 1px 1px);
     }
 
+    a.signin {
+        background: #e8d895;
+        padding: 5px 8px;
+        @include border-radius(4px);
+        @include box-shadow(0 0 2px 2px white);
+    }
+    
     a.on {
         font-weight: normal;
         color: #e4eef1;
@@ -81,8 +94,8 @@ h1.section-title,
             border-left: 1px solid #e4eef1;
             display: block;
             left: -1px;
-            padding: 0 0 10px 0;
-            top: 32px;
+            padding: 4px 0 10px 0;
+            top: 36px;
         }
     }
     .dropdown-menu {
@@ -92,9 +105,13 @@ h1.section-title,
         li {
             line-height: 1.7;
             padding-left: 13px;
+            img {
+                margin-bottom: 3px;
+            }
         }
         li:hover {
             display: block !important;
+            background: white !important;
             margin: 0;
             padding: 0;
             width: 100% !important;
@@ -172,6 +189,9 @@ body.anon .search-drop-menu {
     margin-top: -56px;
     margin-bottom: 56px;
 }
+#ContentLeft {
+    padding-bottom: 0;
+}
 
 .box {
     h2,
@@ -223,17 +243,44 @@ input[type="reset"],
 }
 
 #footer {
-    .span-8,
-    .span-4 {
+    margin-top: 10px;
+    .span-4,
+    .span-8 {
         margin: 0;
-        padding-right: 10px;
+    }
+    .span-4 {
+        width: 17%;
+    }
+    .span-8 {
+        width: 32%
+    }
+    a,
+    a:active,
+    a:hover,
+    a:visited,
+    p {
+        color: #666;
+        font-size: 12px;
+        line-height: 18px;
     }
     h3 {
         color: #de0000;
         font-size: 16px;
+        margin: 0 0 8px 0;
+        padding: 0;
     }
     ul {
         list-style: none;
         margin: 0;
     }
+    textarea {
+        display: block;
+        margin: 12px 0 10px;
+        width: 80%;
+    }
+}
+.pager,
+.paginator {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }

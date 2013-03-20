@@ -16,6 +16,7 @@ p,
 h1,
 h1.section-title,
 .box h2,
+.question-page h1,
 .short-summary h2,
 .short-summary .counts .item-count,
 .tag-right,
@@ -240,6 +241,24 @@ input[type="reset"],
     border-bottom-color: #a0a0a0 !important;
     border-right-color: #bababa !important;
     border-left-color: #bababa !important;
+}
+
+.comments {
+    input[type="submit"],
+    .controls a.button {
+        color: #4b4b4b !important;
+        border: none !important;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    input[type="submit"] {
+        color: #1b71bd;
+    }
+}
+input[type="submit"].link {
+    border: none !important;
+    color: 4b4b4b !important;
 }
 
 #footer {

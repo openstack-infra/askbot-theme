@@ -105,7 +105,8 @@ h1.section-title,
         top: 22px;
         li {
             line-height: 1.7;
-            padding-left: 13px;
+            padding: 0 0 0 13px;
+            margin: 0;
             img {
                 margin-bottom: 3px;
             }
@@ -113,16 +114,14 @@ h1.section-title,
         li:hover {
             display: block !important;
             background: white !important;
-            margin: 0;
-            padding: 0;
-            width: 100% !important;
         }
         a {
             margin: 0;
             padding: 0;
         }
         a:hover {
-            text-decoration: underline;
+            background: inherit;
+            text-decoration: none;
         }
     }
 }
@@ -281,6 +280,9 @@ input[type="submit"].link {
         color: #666;
         font-size: 12px;
         line-height: 18px;
+    }
+    p {
+        margin-top: 14px;
     }
     h3 {
         color: #de0000;

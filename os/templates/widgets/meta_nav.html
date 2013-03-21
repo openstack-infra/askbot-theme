@@ -20,7 +20,7 @@
                 </a>
             </li>
             {% endif %}
-            {% if moderation_items['new_count'] + moderation_items['seen_count'] > 0 %}
+            {% if moderation_items and (moderation_items['new_count'] + moderation_items['seen_count'] > 0) %}
             <li>
                 <a id="ab-responses" href="{{user.get_absolute_url()}}?sort=inbox&section=flags">
                     {% if moderation_items['new_count'] > 0 %}

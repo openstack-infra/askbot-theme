@@ -3,21 +3,23 @@
     {% set user=request.user %}
     <span class="dropdown-toggle">
         <ul class="dropdown-menu">
+            {% if user.new_response_count + user.seen_response_count > 0 %}
             <li>
                 <a id='ab-responses' href="{{user.get_absolute_url()}}?sort=inbox&section=forum">
                     <img 
                         alt="{% trans username=user.username|escape %}responses for {{username}}{% endtrans %}"
                         {% if user.new_response_count > 0 %}
-                        src="{{ "/images/mail-envelope-full.png"|media }}"
-                        title="{% trans response_count=user.new_response_count %}you have {{response_count}} new response{% pluralize %}you have {{response_count}} new responses{% endtrans %}"
+                            src="{{ "/images/mail-envelope-full.png"|media }}"
+                            title="{% trans response_count=user.new_response_count %}you have {{response_count}} new response{% pluralize %}you have {{response_count}} new responses{% endtrans %}"
                         {% elif user.seen_response_count > 0 %}
-                        src="{{ "/images/mail-envelope-empty.png"|media }}"
-                        title="{% trans %}no new responses yet{% endtrans %}"
+                            src="{{ "/images/mail-envelope-empty.png"|media }}"
+                            title="{% trans %}no new responses yet{% endtrans %}"
                         {% endif %}
                     />
                     {% trans %}responses{% endtrans %}
                 </a>
             </li>
+            {% endif %}
             {% if moderation_items %}
             <li>
                 <a id="ab-responses" href="{{user.get_absolute_url()}}?sort=inbox&section=flags">
@@ -51,6 +53,7 @@
                 </li>
             {%- endif -%}
             {% if settings.BADGES_MODE != 'hidden' %}
+                {% if user.gold + user.silver + user.bronze > 0 %}
                 <li>
                     <a class="user-micro-info"
                     href="{{user.get_absolute_url()}}#badges"
@@ -69,6 +72,7 @@
                     {%- endif -%}
                     </span></a>
                 </li>
+                {% endif %}
             {% endif %}
             {% if request.user.is_administrator() %}
                 <li>

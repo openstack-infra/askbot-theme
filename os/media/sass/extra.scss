@@ -54,6 +54,7 @@ h1.section-title,
     position: absolute;
     left: 200px;
     bottom: 22px;
+    width: 750px;
 
     a {
         color: #255e6e;
@@ -101,6 +102,9 @@ h1.section-title,
         border-left: 1px solid #e4eef1;
         /*background: url(../images/sprites.png) no-repeat -7px -242px;*/
         position: relative;
+        &.lang-nav {
+            padding: 0;
+        }
     }
     span.dropdown-toggle:hover {
         background: #e4eef1;
@@ -112,6 +116,14 @@ h1.section-title,
             left: -1px;
             padding: 4px 0 10px 0;
             top: 36px;
+        }
+        &.lang-nav {
+            .dropdown-menu {
+                padding-top: 10px;
+                left: -14px;
+                min-width: auto !important;
+                top: 14px;
+            }
         }
     }
     .dropdown-menu {
@@ -137,6 +149,20 @@ h1.section-title,
         a:hover {
             background: inherit;
             text-decoration: none;
+        }
+    }
+    .lang-nav {
+        float: right;
+        color: #255e6e;
+        font-size: 16px;
+        line-height: 16px;
+        height: 16px;
+        @include text-shadow(#fff 0 1px 1px);
+        li {
+            background: transparent;
+        }
+        .dropdown-menu li:hover {
+            background: transparent !important;
         }
     }
 }

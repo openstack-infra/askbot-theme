@@ -326,7 +326,15 @@ input.cancelSearchBtn {
   right: -500px;
 }
 
-/* line 268, ../sass/extra.scss */
+/* line 264, ../sass/extra.scss */
+#searchBar input[type="button"].cancelSearchBtn {
+  right: 8px;
+  border: none !important;
+  color: #888 !important;
+  background: transparent !important;
+}
+
+/* line 274, ../sass/extra.scss */
 button,
 input[type="submit"],
 input[type="button"],
@@ -359,46 +367,46 @@ input[type="reset"],
   border-left-color: #bababa !important;
 }
 
-/* line 288, ../sass/extra.scss */
+/* line 294, ../sass/extra.scss */
 .comments input[type="submit"],
 .comments .controls a.button {
   color: #4b4b4b !important;
   border: none !important;
 }
-/* line 291, ../sass/extra.scss */
+/* line 297, ../sass/extra.scss */
 .comments input[type="submit"]:hover,
 .comments .controls a.button:hover {
   text-decoration: underline;
 }
-/* line 295, ../sass/extra.scss */
+/* line 301, ../sass/extra.scss */
 .comments input[type="submit"] {
   color: #1b71bd;
 }
 
-/* line 299, ../sass/extra.scss */
+/* line 305, ../sass/extra.scss */
 input[type="submit"].link {
   border: none !important;
   color: 4b4b4b !important;
 }
 
-/* line 304, ../sass/extra.scss */
+/* line 310, ../sass/extra.scss */
 #footer {
   margin-top: 10px;
 }
-/* line 307, ../sass/extra.scss */
+/* line 313, ../sass/extra.scss */
 #footer .span-4,
 #footer .span-8 {
   margin: 0;
 }
-/* line 310, ../sass/extra.scss */
+/* line 316, ../sass/extra.scss */
 #footer .span-4 {
   width: 17%;
 }
-/* line 313, ../sass/extra.scss */
+/* line 319, ../sass/extra.scss */
 #footer .span-8 {
   width: 32%;
 }
-/* line 320, ../sass/extra.scss */
+/* line 326, ../sass/extra.scss */
 #footer a,
 #footer a:active,
 #footer a:hover,
@@ -408,30 +416,30 @@ input[type="submit"].link {
   font-size: 12px;
   line-height: 18px;
 }
-/* line 325, ../sass/extra.scss */
+/* line 331, ../sass/extra.scss */
 #footer p {
   margin-top: 14px;
 }
-/* line 328, ../sass/extra.scss */
+/* line 334, ../sass/extra.scss */
 #footer h3 {
   color: #de0000;
   font-size: 16px;
   margin: 0 0 8px 0;
   padding: 0;
 }
-/* line 334, ../sass/extra.scss */
+/* line 340, ../sass/extra.scss */
 #footer ul {
   list-style: none;
   margin: 0;
 }
-/* line 338, ../sass/extra.scss */
+/* line 344, ../sass/extra.scss */
 #footer textarea {
   display: block;
   margin: 12px 0 10px;
   width: 80%;
 }
 
-/* line 345, ../sass/extra.scss */
+/* line 351, ../sass/extra.scss */
 .pager,
 .paginator {
   margin-bottom: 0;

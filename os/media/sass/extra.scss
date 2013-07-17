@@ -261,6 +261,12 @@ input.cancelSearchBtn {
     padding: 0;
     right: -500px;
 }
+#searchBar input[type="button"].cancelSearchBtn {
+    right: 8px;
+    border: none !important;
+    color: #888 !important;
+    background: transparent !important;
+}
 button,
 input[type="submit"],
 input[type="button"],

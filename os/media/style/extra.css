@@ -144,43 +144,42 @@ h1.section-title,
 }
 /* line 121, ../sass/extra.scss */
 #metaNav span.dropdown-toggle:hover.lang-nav .dropdown-menu {
-  padding-top: 10px;
   left: -14px;
   min-width: auto !important;
-  top: 14px;
+  top: 27px;
 }
-/* line 129, ../sass/extra.scss */
+/* line 128, ../sass/extra.scss */
 #metaNav .dropdown-menu {
   background: #e4eef1;
   left: 26px;
   top: 22px;
 }
-/* line 133, ../sass/extra.scss */
+/* line 132, ../sass/extra.scss */
 #metaNav .dropdown-menu li {
   line-height: 1.7;
   padding: 0 0 0 13px;
   margin: 0;
 }
-/* line 137, ../sass/extra.scss */
+/* line 136, ../sass/extra.scss */
 #metaNav .dropdown-menu li img {
   margin-bottom: 3px;
 }
-/* line 141, ../sass/extra.scss */
+/* line 140, ../sass/extra.scss */
 #metaNav .dropdown-menu li:hover {
   display: block !important;
   background: white !important;
 }
-/* line 145, ../sass/extra.scss */
+/* line 144, ../sass/extra.scss */
 #metaNav .dropdown-menu a {
   margin: 0;
   padding: 0;
 }
-/* line 149, ../sass/extra.scss */
+/* line 148, ../sass/extra.scss */
 #metaNav .dropdown-menu a:hover {
   background: inherit;
   text-decoration: none;
 }
-/* line 154, ../sass/extra.scss */
+/* line 153, ../sass/extra.scss */
 #metaNav .lang-nav {
   float: right;
   color: #255e6e;
@@ -189,35 +188,35 @@ h1.section-title,
   height: 16px;
   text-shadow: white 0 1px 1px;
 }
-/* line 161, ../sass/extra.scss */
+/* line 160, ../sass/extra.scss */
 #metaNav .lang-nav li {
   background: transparent;
 }
-/* line 164, ../sass/extra.scss */
+/* line 163, ../sass/extra.scss */
 #metaNav .lang-nav .dropdown-menu li:hover {
   background: transparent !important;
 }
 
-/* line 169, ../sass/extra.scss */
+/* line 168, ../sass/extra.scss */
 #header.with-logo #userToolsNav {
   bottom: 19px;
   right: -100px;
 }
 
-/* line 173, ../sass/extra.scss */
+/* line 172, ../sass/extra.scss */
 #secondaryHeader {
   background: #fff;
   border: none;
   margin-bottom: 7px;
 }
 
-/* line 178, ../sass/extra.scss */
+/* line 177, ../sass/extra.scss */
 .scope-selector {
   font-size: 16px;
   height: 37px;
   border-bottom: 3px solid white;
 }
-/* line 183, ../sass/extra.scss */
+/* line 182, ../sass/extra.scss */
 .scope-selector.on, .scope-selector:hover {
   background: none;
   border-bottom: 3px solid;
@@ -228,33 +227,33 @@ h1.section-title,
   -o-transition: 0.07s, ease;
   transition: 0.07s, ease;
 }
-/* line 190, ../sass/extra.scss */
+/* line 189, ../sass/extra.scss */
 .scope-selector:hover {
   color: #264D69;
 }
-/* line 193, ../sass/extra.scss */
+/* line 192, ../sass/extra.scss */
 .scope-selector:first-child {
   margin-left: 0;
 }
 
-/* line 198, ../sass/extra.scss */
+/* line 197, ../sass/extra.scss */
 #askButton,
 #homeButton {
   display: none;
 }
 
-/* line 201, ../sass/extra.scss */
+/* line 200, ../sass/extra.scss */
 .tabBar {
   background: none;
 }
 
-/* line 204, ../sass/extra.scss */
+/* line 203, ../sass/extra.scss */
 #logo img {
   height: 56px;
   margin-left: -10px;
 }
 
-/* line 208, ../sass/extra.scss */
+/* line 207, ../sass/extra.scss */
 #searchBar {
   -webkit-box-shadow: inset #eeeeee 1px 1px 2px 1px;
   -moz-box-shadow: inset #eeeeee 1px 1px 2px 1px;
@@ -263,12 +262,12 @@ h1.section-title,
   margin-top: -33px;
 }
 
-/* line 213, ../sass/extra.scss */
+/* line 212, ../sass/extra.scss */
 .search-drop-menu {
   margin-left: 255px;
 }
 
-/* line 216, ../sass/extra.scss */
+/* line 215, ../sass/extra.scss */
 .search-drop-menu .footer button {
   padding: 2px 6px 3px;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(5%, #f3f3f3), color-stop(100%, #f5850c));
@@ -282,30 +281,30 @@ h1.section-title,
   text-shadow: 0 0 0;
 }
 
-/* line 225, ../sass/extra.scss */
+/* line 224, ../sass/extra.scss */
 body.anon #searchBar,
 body.anon .search-drop-menu {
   margin-left: 158px;
 }
 
-/* line 229, ../sass/extra.scss */
+/* line 228, ../sass/extra.scss */
 #ContentRight {
   margin-top: -56px;
   margin-bottom: 56px;
 }
 
-/* line 233, ../sass/extra.scss */
+/* line 232, ../sass/extra.scss */
 #ContentLeft {
   padding-bottom: 0;
 }
 
-/* line 239, ../sass/extra.scss */
+/* line 238, ../sass/extra.scss */
 .box h2,
 .box .contributorback {
   background: none;
   text-align: left;
 }
-/* line 247, ../sass/extra.scss */
+/* line 246, ../sass/extra.scss */
 .box .inputs #interestingTagInput,
 .box .inputs #ignoredTagInput,
 .box .inputs #subscribedTagInput,
@@ -315,7 +314,7 @@ body.anon .search-drop-menu {
   line-height: 23px;
 }
 
-/* line 256, ../sass/extra.scss */
+/* line 255, ../sass/extra.scss */
 input[type="submit"].searchBtn,
 input.cancelSearchBtn {
   border: 0;
@@ -326,7 +325,7 @@ input.cancelSearchBtn {
   right: -500px;
 }
 
-/* line 264, ../sass/extra.scss */
+/* line 263, ../sass/extra.scss */
 #searchBar input[type="button"].cancelSearchBtn {
   right: 8px;
   border: none !important;
@@ -338,7 +337,7 @@ input.cancelSearchBtn {
   width: 32px !important;
 }
 
-/* line 278, ../sass/extra.scss */
+/* line 277, ../sass/extra.scss */
 button,
 input[type="submit"],
 input[type="button"],
@@ -371,46 +370,46 @@ input[type="reset"],
   border-left-color: #bababa !important;
 }
 
-/* line 298, ../sass/extra.scss */
+/* line 297, ../sass/extra.scss */
 .comments input[type="submit"],
 .comments .controls a.button {
   color: #4b4b4b !important;
   border: none !important;
 }
-/* line 301, ../sass/extra.scss */
+/* line 300, ../sass/extra.scss */
 .comments input[type="submit"]:hover,
 .comments .controls a.button:hover {
   text-decoration: underline;
 }
-/* line 305, ../sass/extra.scss */
+/* line 304, ../sass/extra.scss */
 .comments input[type="submit"] {
   color: #1b71bd;
 }
 
-/* line 309, ../sass/extra.scss */
+/* line 308, ../sass/extra.scss */
 input[type="submit"].link {
   border: none !important;
   color: 4b4b4b !important;
 }
 
-/* line 314, ../sass/extra.scss */
+/* line 313, ../sass/extra.scss */
 #footer {
   margin-top: 10px;
 }
-/* line 317, ../sass/extra.scss */
+/* line 316, ../sass/extra.scss */
 #footer .span-4,
 #footer .span-8 {
   margin: 0;
 }
-/* line 320, ../sass/extra.scss */
+/* line 319, ../sass/extra.scss */
 #footer .span-4 {
   width: 17%;
 }
-/* line 323, ../sass/extra.scss */
+/* line 322, ../sass/extra.scss */
 #footer .span-8 {
   width: 32%;
 }
-/* line 330, ../sass/extra.scss */
+/* line 329, ../sass/extra.scss */
 #footer a,
 #footer a:active,
 #footer a:hover,
@@ -420,30 +419,30 @@ input[type="submit"].link {
   font-size: 12px;
   line-height: 18px;
 }
-/* line 335, ../sass/extra.scss */
+/* line 334, ../sass/extra.scss */
 #footer p {
   margin-top: 14px;
 }
-/* line 338, ../sass/extra.scss */
+/* line 337, ../sass/extra.scss */
 #footer h3 {
   color: #de0000;
   font-size: 16px;
   margin: 0 0 8px 0;
   padding: 0;
 }
-/* line 344, ../sass/extra.scss */
+/* line 343, ../sass/extra.scss */
 #footer ul {
   list-style: none;
   margin: 0;
 }
-/* line 348, ../sass/extra.scss */
+/* line 347, ../sass/extra.scss */
 #footer textarea {
   display: block;
   margin: 12px 0 10px;
   width: 80%;
 }
 
-/* line 355, ../sass/extra.scss */
+/* line 354, ../sass/extra.scss */
 .pager,
 .paginator {
   margin-bottom: 0;

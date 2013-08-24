@@ -246,7 +246,7 @@ body.anon .search-drop-menu {
         #ignoredTagInput,
         #subscribedTagInput,
         #ab-tag-search {
-            width: 132px;
+            width: 128px;
             height: 23px;
             line-height: 23px;
         }
@@ -269,7 +269,7 @@ input.cancelSearchBtn {
     background: transparent !important;
     font-size: 23px !important;
     height: 32px !important;
-    line-height: 32px !important;
+    line-height: 36px !important;
     width: 32px !important;
 }
 button,
@@ -281,7 +281,7 @@ input[type="reset"],
     font-weight: normal;
     border: 1px solid #e2e2e2 !important;
     padding: 4px 15px;
-    color: black!important;
+    color: #404040 !important;
     text-decoration: none!important;
     font-size: 12.5px;
     background: #FFFFFF;
@@ -356,4 +356,34 @@ input[type="submit"].link {
 .paginator {
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+.post-comments .submit {
+    line-height: inherit;
+}
+
+body.lang-zh_CN,
+body.lang-zh-cn {
+    .box {
+        .inputs {
+            #interestingTagInput,
+            #ignoredTagInput,
+            #subscribedTagInput,
+            #ab-tag-search {
+                width: 121px;
+            }
+        }
+    }
+    .scopes-True-True-True {
+        #searchBar,
+        .search-drop-menu {
+            margin-left: 185px;
+        }
+    }
+    .scopes-True-True-False {
+        #searchBar,
+        .search-drop-menu {
+            margin-left: 114px;
+        }
+    }
 }

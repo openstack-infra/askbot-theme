@@ -311,7 +311,7 @@ body.anon .search-drop-menu {
 .box .inputs #ignoredTagInput,
 .box .inputs #subscribedTagInput,
 .box .inputs #ab-tag-search {
-  width: 132px;
+  width: 128px;
   height: 23px;
   line-height: 23px;
 }
@@ -335,7 +335,7 @@ input.cancelSearchBtn {
   background: transparent !important;
   font-size: 23px !important;
   height: 32px !important;
-  line-height: 32px !important;
+  line-height: 36px !important;
   width: 32px !important;
 }
 
@@ -349,8 +349,8 @@ input[type="reset"],
   font-weight: normal;
   border: 1px solid #e2e2e2 !important;
   padding: 4px 15px;
-  color: black!important;
-  text-decoration: none!important;
+  color: #404040 !important;
+  text-decoration: none !important;
   font-size: 12.5px;
   background: #FFFFFF;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #f3f3f3), color-stop(100%, #ebebeb));
@@ -449,4 +449,35 @@ input[type="submit"].link {
 .paginator {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+/* line 361, ../sass/extra.scss */
+.post-comments .submit {
+  line-height: inherit;
+}
+
+/* line 372, ../sass/extra.scss */
+body.lang-zh_CN .box .inputs #interestingTagInput,
+body.lang-zh_CN .box .inputs #ignoredTagInput,
+body.lang-zh_CN .box .inputs #subscribedTagInput,
+body.lang-zh_CN .box .inputs #ab-tag-search,
+body.lang-zh-cn .box .inputs #interestingTagInput,
+body.lang-zh-cn .box .inputs #ignoredTagInput,
+body.lang-zh-cn .box .inputs #subscribedTagInput,
+body.lang-zh-cn .box .inputs #ab-tag-search {
+  width: 121px;
+}
+/* line 379, ../sass/extra.scss */
+body.lang-zh_CN .scopes-True-True-True #searchBar,
+body.lang-zh_CN .scopes-True-True-True .search-drop-menu,
+body.lang-zh-cn .scopes-True-True-True #searchBar,
+body.lang-zh-cn .scopes-True-True-True .search-drop-menu {
+  margin-left: 185px;
+}
+/* line 385, ../sass/extra.scss */
+body.lang-zh_CN .scopes-True-True-False #searchBar,
+body.lang-zh_CN .scopes-True-True-False .search-drop-menu,
+body.lang-zh-cn .scopes-True-True-False #searchBar,
+body.lang-zh-cn .scopes-True-True-False .search-drop-menu {
+  margin-left: 114px;
 }

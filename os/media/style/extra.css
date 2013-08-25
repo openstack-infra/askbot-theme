@@ -456,7 +456,7 @@ input[type="submit"].link {
   line-height: inherit;
 }
 
-/* line 372, ../sass/extra.scss */
+/* line 373, ../sass/extra.scss */
 body.lang-zh_CN .box .inputs #interestingTagInput,
 body.lang-zh_CN .box .inputs #ignoredTagInput,
 body.lang-zh_CN .box .inputs #subscribedTagInput,
@@ -464,20 +464,28 @@ body.lang-zh_CN .box .inputs #ab-tag-search,
 body.lang-zh-cn .box .inputs #interestingTagInput,
 body.lang-zh-cn .box .inputs #ignoredTagInput,
 body.lang-zh-cn .box .inputs #subscribedTagInput,
-body.lang-zh-cn .box .inputs #ab-tag-search {
+body.lang-zh-cn .box .inputs #ab-tag-search,
+body.lang-zh .box .inputs #interestingTagInput,
+body.lang-zh .box .inputs #ignoredTagInput,
+body.lang-zh .box .inputs #subscribedTagInput,
+body.lang-zh .box .inputs #ab-tag-search {
   width: 121px;
 }
-/* line 379, ../sass/extra.scss */
+/* line 380, ../sass/extra.scss */
 body.lang-zh_CN .scopes-True-True-True #searchBar,
 body.lang-zh_CN .scopes-True-True-True .search-drop-menu,
 body.lang-zh-cn .scopes-True-True-True #searchBar,
-body.lang-zh-cn .scopes-True-True-True .search-drop-menu {
+body.lang-zh-cn .scopes-True-True-True .search-drop-menu,
+body.lang-zh .scopes-True-True-True #searchBar,
+body.lang-zh .scopes-True-True-True .search-drop-menu {
   margin-left: 185px;
 }
-/* line 385, ../sass/extra.scss */
+/* line 386, ../sass/extra.scss */
 body.lang-zh_CN .scopes-True-True-False #searchBar,
 body.lang-zh_CN .scopes-True-True-False .search-drop-menu,
 body.lang-zh-cn .scopes-True-True-False #searchBar,
-body.lang-zh-cn .scopes-True-True-False .search-drop-menu {
+body.lang-zh-cn .scopes-True-True-False .search-drop-menu,
+body.lang-zh .scopes-True-True-False #searchBar,
+body.lang-zh .scopes-True-True-False .search-drop-menu {
   margin-left: 114px;
 }

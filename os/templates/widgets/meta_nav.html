@@ -72,7 +72,7 @@ under the License.
                 <li>
                     <a class="user-micro-info"
                     href="{{user.get_absolute_url()}}#badges"
-                    ><span title="{{user.get_badge_summary}}">{% trans %}badges:{% endtrans %}
+                    ><span title="{{user.get_badge_summary()}}">{% trans %}badges:{% endtrans %}
                     {% if user.gold %}
                     <span class='badge1'>&#9679;</span>
                     <span class="badgecount">{{user.gold}}</span>

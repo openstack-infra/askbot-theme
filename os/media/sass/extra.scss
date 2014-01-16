@@ -39,6 +39,14 @@ h1.section-title,
 .question-page .vote-number {
     font-family: $heading-font;
 }
+.question-page {
+    .post-update-info {
+        line-height: 12px;
+    }
+}
+.post-update-info .user-info {
+    margin-top: 0px;
+}
 #header {
     background: #e4eef1;
     border-top: 3px solid #255e6e;
@@ -195,9 +203,18 @@ h1.section-title,
         margin-left: 0;
     }
 }
-#askButton,
 #homeButton {
     display: none;
+}
+#askButton {
+    color: transparent !important;
+    border: transparent !important;
+    width: 168px;
+    @include box-shadow(0 0 0);
+    &:hover {
+        color: transparent !important;
+        border: transparent !important;
+    }
 }
 .tabBar {
     background: none;
@@ -208,11 +225,6 @@ h1.section-title,
 }
 #searchBar {
     @include box-shadow(inset #eee 1px 1px 2px 1px);
-    margin-left: 255px;
-    margin-top: -33px;
-}
-.search-drop-menu {
-    margin-left: 255px;
 }
 .search-drop-menu .footer button {
     padding: 2px 6px 3px;
@@ -221,10 +233,6 @@ h1.section-title,
     @include text-shadow(0 0 0);
 }
 .search-drop-menu .footer button:hover {
-}
-body.anon #searchBar,
-body.anon .search-drop-menu {
-    margin-left: 158px;
 }
 
 #ContentRight {

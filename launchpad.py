@@ -23,7 +23,6 @@ def no_credential():
 
 """Logs into Launchpad """
 #cachedir = '/Users/evgenyfadeev/.launchadlib/cache'
-Launchpad.logout()
 launchpad = Launchpad.login_with(
         'Extract Answers',
         version='devel',

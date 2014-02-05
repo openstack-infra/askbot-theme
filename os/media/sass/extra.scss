@@ -226,13 +226,18 @@ h1.section-title,
 #searchBar {
     @include box-shadow(inset #eee 1px 1px 2px 1px);
 }
-.search-drop-menu .footer button {
-    padding: 2px 6px 3px;
-    @include background(linear-gradient(white, #F3F3F3 5%, rgb(245, 133, 12)));
-    @include box-shadow(0 0 2px 2px white);
-    @include text-shadow(0 0 0);
-}
-.search-drop-menu .footer button:hover {
+.search-drop-menu {
+    position: relative;
+    bottom: -42px;
+    &.waiting {
+        bottom: -42px;
+    }
+    .footer button {
+        padding: 2px 6px 3px;
+        @include background(linear-gradient(white, #F3F3F3 5%, rgb(245, 133, 12)));
+        @include box-shadow(0 0 2px 2px white);
+        @include text-shadow(0 0 0);
+    }
 }
 
 #ContentRight {

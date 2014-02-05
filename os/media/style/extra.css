@@ -287,6 +287,15 @@ h1.section-title,
 }
 
 /* line 229, ../sass/extra.scss */
+.search-drop-menu {
+  position: relative;
+  bottom: -42px;
+}
+/* line 232, ../sass/extra.scss */
+.search-drop-menu.waiting {
+  bottom: -42px;
+}
+/* line 235, ../sass/extra.scss */
 .search-drop-menu .footer button {
   padding: 2px 6px 3px;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(5%, #f3f3f3), color-stop(100%, #f5850c));
@@ -300,24 +309,24 @@ h1.section-title,
   text-shadow: 0 0 0;
 }
 
-/* line 238, ../sass/extra.scss */
+/* line 243, ../sass/extra.scss */
 #ContentRight {
   margin-top: -56px;
   margin-bottom: 56px;
 }
 
-/* line 242, ../sass/extra.scss */
+/* line 247, ../sass/extra.scss */
 #ContentLeft {
   padding-bottom: 0;
 }
 
-/* line 248, ../sass/extra.scss */
+/* line 253, ../sass/extra.scss */
 .box h2,
 .box .contributorback {
   background: none;
   text-align: left;
 }
-/* line 256, ../sass/extra.scss */
+/* line 261, ../sass/extra.scss */
 .box .inputs #interestingTagInput,
 .box .inputs #ignoredTagInput,
 .box .inputs #subscribedTagInput,
@@ -327,7 +336,7 @@ h1.section-title,
   line-height: 23px;
 }
 
-/* line 265, ../sass/extra.scss */
+/* line 270, ../sass/extra.scss */
 input[type="submit"].searchBtn,
 input.cancelSearchBtn {
   border: 0;
@@ -338,7 +347,7 @@ input.cancelSearchBtn {
   right: -500px;
 }
 
-/* line 273, ../sass/extra.scss */
+/* line 278, ../sass/extra.scss */
 #searchBar input[type="button"].cancelSearchBtn {
   right: 8px;
   border: none !important;
@@ -350,7 +359,7 @@ input.cancelSearchBtn {
   width: 32px !important;
 }
 
-/* line 287, ../sass/extra.scss */
+/* line 292, ../sass/extra.scss */
 button,
 input[type="submit"],
 input[type="button"],
@@ -383,46 +392,46 @@ input[type="reset"],
   border-left-color: #bababa !important;
 }
 
-/* line 307, ../sass/extra.scss */
+/* line 312, ../sass/extra.scss */
 .comments input[type="submit"],
 .comments .controls a.button {
   color: #4b4b4b !important;
   border: none !important;
 }
-/* line 310, ../sass/extra.scss */
+/* line 315, ../sass/extra.scss */
 .comments input[type="submit"]:hover,
 .comments .controls a.button:hover {
   text-decoration: underline;
 }
-/* line 314, ../sass/extra.scss */
+/* line 319, ../sass/extra.scss */
 .comments input[type="submit"] {
   color: #1b71bd;
 }
 
-/* line 318, ../sass/extra.scss */
+/* line 323, ../sass/extra.scss */
 input[type="submit"].link {
   border: none !important;
   color: 4b4b4b !important;
 }
 
-/* line 323, ../sass/extra.scss */
+/* line 328, ../sass/extra.scss */
 #footer {
   margin-top: 10px;
 }
-/* line 326, ../sass/extra.scss */
+/* line 331, ../sass/extra.scss */
 #footer .span-4,
 #footer .span-8 {
   margin: 0;
 }
-/* line 329, ../sass/extra.scss */
+/* line 334, ../sass/extra.scss */
 #footer .span-4 {
   width: 17%;
 }
-/* line 332, ../sass/extra.scss */
+/* line 337, ../sass/extra.scss */
 #footer .span-8 {
   width: 32%;
 }
-/* line 339, ../sass/extra.scss */
+/* line 344, ../sass/extra.scss */
 #footer a,
 #footer a:active,
 #footer a:hover,
@@ -432,42 +441,42 @@ input[type="submit"].link {
   font-size: 12px;
   line-height: 18px;
 }
-/* line 344, ../sass/extra.scss */
+/* line 349, ../sass/extra.scss */
 #footer p {
   margin-top: 14px;
 }
-/* line 347, ../sass/extra.scss */
+/* line 352, ../sass/extra.scss */
 #footer h3 {
   color: #de0000;
   font-size: 16px;
   margin: 0 0 8px 0;
   padding: 0;
 }
-/* line 353, ../sass/extra.scss */
+/* line 358, ../sass/extra.scss */
 #footer ul {
   list-style: none;
   margin: 0;
 }
-/* line 357, ../sass/extra.scss */
+/* line 362, ../sass/extra.scss */
 #footer textarea {
   display: block;
   margin: 12px 0 10px;
   width: 80%;
 }
 
-/* line 364, ../sass/extra.scss */
+/* line 369, ../sass/extra.scss */
 .pager,
 .paginator {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 369, ../sass/extra.scss */
+/* line 374, ../sass/extra.scss */
 .post-comments .submit {
   line-height: inherit;
 }
 
-/* line 381, ../sass/extra.scss */
+/* line 386, ../sass/extra.scss */
 body.lang-zh_CN .box .inputs #interestingTagInput,
 body.lang-zh_CN .box .inputs #ignoredTagInput,
 body.lang-zh_CN .box .inputs #subscribedTagInput,
@@ -482,7 +491,7 @@ body.lang-zh .box .inputs #subscribedTagInput,
 body.lang-zh .box .inputs #ab-tag-search {
   width: 121px;
 }
-/* line 388, ../sass/extra.scss */
+/* line 393, ../sass/extra.scss */
 body.lang-zh_CN .scopes-True-True-True #searchBar,
 body.lang-zh_CN .scopes-True-True-True .search-drop-menu,
 body.lang-zh-cn .scopes-True-True-True #searchBar,
@@ -491,7 +500,7 @@ body.lang-zh .scopes-True-True-True #searchBar,
 body.lang-zh .scopes-True-True-True .search-drop-menu {
   margin-left: 185px;
 }
-/* line 394, ../sass/extra.scss */
+/* line 399, ../sass/extra.scss */
 body.lang-zh_CN .scopes-True-True-False #searchBar,
 body.lang-zh_CN .scopes-True-True-False .search-drop-menu,
 body.lang-zh-cn .scopes-True-True-False #searchBar,

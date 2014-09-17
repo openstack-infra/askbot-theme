@@ -37,7 +37,7 @@ under the License.
             {% endif %}
             {% if moderation_items and (moderation_items['new_count'] + moderation_items['seen_count'] > 0) %}
             <li>
-                <a id="ab-responses" href="{{user.get_absolute_url()}}?sort=inbox&section=flags">
+                <a id="ab-responses" href="{% url moderation_queue %}">
                     {% if moderation_items['new_count'] > 0 %}
                         <img src="{{'/images/dialog-warning.png'|media}}"
                         {% if moderation_items['seen_count'] > 0 %}

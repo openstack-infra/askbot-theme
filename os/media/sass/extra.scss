@@ -47,6 +47,38 @@ h1.section-title,
 .post-update-info .user-info {
     margin-top: 0px;
 }
+.user-profile-page ul.avatars .avatar-delete {
+    line-height: 7px;
+    padding: 8px;
+}
+.user-info-table .js-avatar {
+    height: 128px;
+    width: 128px;
+}
+.js-avatar {
+    height: 48px;
+    width: 48px;
+}
+.inbox .js-avatar {
+    height: 16px;
+    width: 16px;
+}
+.user-card {
+    .js-avatar-box {
+        margin-right: 10px;
+    }
+    .js-avatar {
+        height: 32px;
+        width: 32px;
+    }
+}
+.users-page .user-card .js-avatar-box {
+    margin: 3px 6px 0 0;
+}
+.comment-controls .js-avatar {
+    height: 16px;
+    width: 16px;
+}
 #header {
     background: #e4eef1;
     border-top: 3px solid #255e6e;
@@ -174,6 +206,9 @@ h1.section-title,
         }
     }
 }
+#metaNav a:hover {
+    color: #255e6e;
+}
 #header.with-logo #userToolsNav {
     bottom: 19px;
     right: -100px;
@@ -182,6 +217,9 @@ h1.section-title,
     background: #fff;
     border: none;
     margin-bottom: 7px;
+    td.search-bar {
+        padding-right: 62px;
+    }
 }
 .scope-selector {
     font-size: 16px;
@@ -210,9 +248,10 @@ h1.section-title,
     display: none;
 }
 #askButton {
-    height: 34px;
-    line-height: 34px;
-    font-size: 16px;
+    height: 42px;
+    font-size: 15px;
+    line-height: 42px;
+    padding: 0;
     width: 168px;
     @include box-shadow(0 0 0);
 }
@@ -231,6 +270,7 @@ h1.section-title,
     bottom: -42px;
     &.waiting {
         bottom: -42px;
+        height: 25px;
     }
     .footer button {
         padding: 2px 6px 3px;

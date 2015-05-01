@@ -93,7 +93,7 @@ h1.section-title,
 #metaNav {
     position: absolute;
     left: 200px;
-    bottom: 22px;
+    bottom: 25px;
     width: 750px;
 
     a {
@@ -170,7 +170,7 @@ h1.section-title,
         left: 26px;
         top: 22px;
         li {
-            line-height: 1.7;
+            line-height: 1.9;
             padding: 0 0 0 13px;
             margin: 0;
             img {
@@ -178,17 +178,26 @@ h1.section-title,
             }
         }
         li:hover {
-            background: white !important;
+            background: #666 !important;
+            a {
+                color: lighten(#255e6e, 50%);
+            }
         }
         a {
             margin: 0;
             padding: 0;
+            @include text-shadow(none);
         }
         a:hover {
             background: inherit;
             text-decoration: none;
+            color: lighten(#255e6e, 50%);
+            @include text-shadow(none);
         }
     }
+}
+
+#userToolsNav {
     .lang-nav {
         float: right;
         color: #255e6e;
@@ -197,21 +206,27 @@ h1.section-title,
         height: 30px;
         position: absolute !important;
         right: 0;
-        @include text-shadow(#fff 0 1px 1px);
-        li {
+        ul, li {
+            background: #e4eef1;
+        }
+        a {
+            color: #255e6e;
             background: transparent;
+            &:hover {
+                color: lighten(#255e6e, 50%);
+            }
         }
         .dropdown-menu li:hover {
             background: transparent !important;
         }
     }
 }
+
 #metaNav a:hover {
     color: #255e6e;
 }
 #header.with-logo #userToolsNav {
     bottom: 19px;
-    right: -100px;
 }
 #secondaryHeader {
     background: #fff;
